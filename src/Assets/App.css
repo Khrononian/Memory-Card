@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Fallout;
+  src: url(../Logo.ttf)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #063315;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  color: white;
+  font-family: Fallout;
+}

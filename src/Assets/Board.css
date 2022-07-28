@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Fallout;
+    src: url(../FalloutText.ttf)
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.boards p {
+    background-color: #D9AF2F;
+    padding: .6em 1.8em;
+    border-radius: 4px;
+    font-family: Fallout;
+    font-size: 1.5rem;
+}
