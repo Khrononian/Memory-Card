@@ -1,6 +1,6 @@
 @font-face {
     font-family: Fallout;
-    src: url(../FalloutText.ttf)
+    src: url(./FalloutText.ttf)
 }
 
 .cards {
