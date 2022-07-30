@@ -14,7 +14,7 @@ import CaptainZao from './CardImages/CaptainZao.avif'
 import Swan from './CardImages/Swan.avif'
 import Allen from './CardImages/Allen.avif'
 
-const Card = (props) => {
+const Card = () => {
     const [images, setImages] = useState([
         {
             src: FogCrawler,
@@ -70,8 +70,7 @@ const Card = (props) => {
     const [bestScore, setBestScore] = useState(0)
 
     useEffect(() => {
-        if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length) 
-        
+        if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)  
     }, [score])
 
     const getRandomImage = event => {
@@ -90,9 +89,6 @@ const Card = (props) => {
         if (score.indexOf(event.nativeEvent.path[1].innerText) === -1) {
             setScore(prevScore => prevScore.concat(event.nativeEvent.path[1].innerText))
         } else setScore(prevScore => prevScore.splice(0, prevScore.length))
-        
-        console.log('Score', score)
-        console.log('Test', images, imagesCopy, event)
     }
 
     return (
