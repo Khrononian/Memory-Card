@@ -71,6 +71,7 @@ const Card = () => {
 
     useEffect(() => {
         if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)  
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [score])
 
     const getRandomImage = event => {
