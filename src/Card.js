@@ -70,7 +70,8 @@ const Card = () => {
     const [bestScore, setBestScore] = useState(0)
 
     useEffect(() => {
-        if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)  
+        if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)
+        if (score.length === 12) setScore(prevScore => score.length = prevScore.slice(0, 12)) 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [score])
 
