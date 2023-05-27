@@ -86,7 +86,7 @@ const Card = () => {
         }
 
         setImages([...imagesCopy])
-        
+        console.log(event, event.nativeEvent)
         if (score.indexOf(event.nativeEvent.path[1].innerText) === -1) {
             setScore(prevScore => prevScore.concat(event.nativeEvent.path[1].innerText))
         } else setScore(prevScore => prevScore.splice(0, prevScore.length))
