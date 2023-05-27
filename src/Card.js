@@ -70,7 +70,7 @@ const Card = () => {
     const [bestScore, setBestScore] = useState(0)
 
     useEffect(() => {
-        // if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)
+        if (score.length >= bestScore) setBestScore(prevBestScore => prevBestScore = score.length)
         console.log('Test', score)
         // if (score.length === 12) setScore(prevScore => score.length = prevScore.splice(0, 11)) 
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -93,7 +93,7 @@ const Card = () => {
             setScore(prevScore => prevScore.concat(event.target.querySelector('p').innerText))
         } else {
             console.log('RESET')
-            setScore(prevScore => prevScore.filter(image => image !== 'Remove'))
+            setScore(prevScore => prevScore.filter((image, index) => image !== index))
         }
     }
 
