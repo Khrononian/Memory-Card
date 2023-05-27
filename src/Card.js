@@ -93,7 +93,7 @@ const Card = () => {
             setScore(prevScore => prevScore.concat(event.target.querySelector('p').innerText))
         } else {
             console.log('RESET')
-            setScore(prevScore => prevScore.splice(0, prevScore.length))
+            setScore(prevScore => prevScore.splice(0, score.length))
         }
     }
 
