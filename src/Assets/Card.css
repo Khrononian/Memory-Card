@@ -31,10 +31,12 @@
     background: inherit;
     font-size: 1.6rem;
     font-family: Fallout;
+    pointer-events: none;
 }
 
 .card img {
     margin-bottom: 3.5rem;
     width: 100%;
     height: 155px;
+    pointer-events: none;
 }
