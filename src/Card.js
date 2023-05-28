@@ -92,8 +92,9 @@ const Card = () => {
         if (score.indexOf(event.target.querySelector('p').innerText) === -1) {
             setScore(prevScore => prevScore.concat(event.target.querySelector('p').innerText))
         } else {
-            console.log('RESET')
+            
             setScore(prevScore => prevScore.filter((image, index) => image !== index))
+            console.log('RESET', score)
         }
     }
 
